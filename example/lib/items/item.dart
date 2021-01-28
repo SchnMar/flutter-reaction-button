@@ -61,8 +61,8 @@ class _ItemState extends State<Item> with AutomaticKeepAliveClientMixin {
                     width: MediaQuery.of(context).size.width * .2,
                     child: FittedBox(
                       child: FlutterReactionButtonCheck(
-                        onReactionChanged: (reaction, index, isChecked) {
-                          print('reaction selected index: $index');
+                        onReactionChanged: (reaction, isChecked) {
+                          print('reaction selected index: ${reaction.id}');
                         },
                         reactions: widget.reactions,
                         initialReaction: Example.defaultInitialReaction,

@@ -4,27 +4,32 @@ import 'package:flutter_reaction_button/flutter_reaction_button.dart';
 
 List<Reaction> flagsReactions = [
   Reaction(
+    id: 1,
     previewIcon: _builFlagsdPreviewIcon(
         'assets/images/united-kingdom-round.png', 'English'),
     icon: _buildIcon('assets/images/united-kingdom.png'),
   ),
   Reaction(
+    id: 2,
     previewIcon:
         _builFlagsdPreviewIcon('assets/images/algeria-round.png', 'Arabic'),
     icon: _buildIcon('assets/images/algeria.png'),
   ),
   Reaction(
+    id: 3,
     enabled: false,
     previewIcon:
         _builFlagsdPreviewIcon('assets/images/germany-round.png', 'German'),
     icon: _buildIcon('assets/images/germany.png'),
   ),
   Reaction(
+    id: 4,
     previewIcon:
         _builFlagsdPreviewIcon('assets/images/spain-round.png', 'Spanish'),
     icon: _buildIcon('assets/images/spain.png'),
   ),
   Reaction(
+    id: 5,
     previewIcon:
         _builFlagsdPreviewIcon('assets/images/china-round.png', 'Chinese'),
     icon: _buildIcon('assets/images/china.png'),
@@ -32,11 +37,13 @@ List<Reaction> flagsReactions = [
 ];
 
 final defaultInitialReaction = Reaction(
+  id: 0,
   icon: Text('No raction'),
 );
 
 final reactions = [
   Reaction(
+    id: 1,
     title: _buildTitle('Happy'),
     previewIcon: _buildReactionsPreviewIcon('assets/images/happy.png'),
     icon: _buildReactionsIcon(
@@ -50,6 +57,7 @@ final reactions = [
     ),
   ),
   Reaction(
+    id: 2,
     title: _buildTitle('Angry'),
     previewIcon: _buildReactionsPreviewIcon('assets/images/angry.png'),
     icon: _buildReactionsIcon(
@@ -63,6 +71,7 @@ final reactions = [
     ),
   ),
   Reaction(
+    id: 3,
     title: _buildTitle('In love'),
     previewIcon: _buildReactionsPreviewIcon('assets/images/in-love.png'),
     icon: _buildReactionsIcon(
@@ -76,6 +85,7 @@ final reactions = [
     ),
   ),
   Reaction(
+    id: 4,
     title: _buildTitle('Sad'),
     previewIcon: _buildReactionsPreviewIcon('assets/images/sad.png'),
     icon: _buildReactionsIcon(
@@ -89,6 +99,7 @@ final reactions = [
     ),
   ),
   Reaction(
+    id: 5,
     title: _buildTitle('Surprised'),
     previewIcon: _buildReactionsPreviewIcon('assets/images/surprised.png'),
     icon: _buildReactionsIcon(
@@ -102,6 +113,7 @@ final reactions = [
     ),
   ),
   Reaction(
+    id: 6,
     title: _buildTitle('Mad'),
     previewIcon: _buildReactionsPreviewIcon('assets/images/mad.png'),
     icon: _buildReactionsIcon(
