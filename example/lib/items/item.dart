@@ -67,6 +67,9 @@ class _ItemState extends State<Item> with AutomaticKeepAliveClientMixin {
                         reactions: widget.reactions,
                         initialReaction: Example.defaultInitialReaction,
                         selectedReaction: widget.reactions[1],
+                        reactionSelectionAppearanceDuration:
+                            Duration(milliseconds: 25),
+                        boxDuration: Duration(milliseconds: 75),
                       ),
                     ),
                   ),

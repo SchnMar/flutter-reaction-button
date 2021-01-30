@@ -38,6 +38,8 @@ class FlutterReactionButtonCheck extends StatefulWidget {
   /// Reactions box show/hide duration [default = 200 milliseconds]
   final Duration boxDuration;
 
+  final Duration reactionSelectionAppearanceDuration;
+
   /// Reactions box alignment [default = Alignment.center]
   final AlignmentGeometry boxAlignment;
 
@@ -62,6 +64,8 @@ class FlutterReactionButtonCheck extends StatefulWidget {
     this.boxElevation = 5,
     this.boxRadius = 50,
     this.boxDuration = const Duration(milliseconds: 200),
+    this.reactionSelectionAppearanceDuration =
+        const Duration(milliseconds: 100),
     this.boxAlignment = Alignment.center,
     this.isChecked = false,
     this.boxPadding = const EdgeInsets.all(0),
@@ -119,7 +123,8 @@ class _FlutterReactionButtonCheckState
       );
 
   void _onTapReactionButton(BuildContext context) {
-    _timer = Timer.periodic(Duration(milliseconds: 100), (timer) {
+    _timer =
+        Timer.periodic(widget.reactionSelectionAppearanceDuration, (timer) {
       if (_timer.tick >= _maxTick) {
         _showReactionButtons(context);
         _timer.cancel();
